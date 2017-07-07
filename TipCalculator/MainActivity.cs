@@ -34,9 +34,7 @@ namespace TipCalculator
 
                 var total = Convert.ToDouble(text);
 
-                var tip = total * .15;
-
-                tip = Math.Round(tip, 2);
+                var tip = Math.Round((total * .15), 2);
 
                 outputTip.Text = tip.ToString();
 
