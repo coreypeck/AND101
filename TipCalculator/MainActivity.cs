@@ -32,9 +32,9 @@ namespace TipCalculator
             {
                 string text = inputBill.Text;
 
-                var total = Convert.ToDouble(text);
+                var currentTotal = Convert.ToDouble(text);
 
-                var tip = Math.Round((total * .15), 2);
+                var tip = Math.Round((currentTotal * .15), 2);
 
                 outputTip.Text = tip.ToString();
 
